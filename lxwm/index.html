@@ -7,94 +7,121 @@
   <title>联系我们-四川愿乡三农科技服务有限公司</title>
   <meta name="keywords" content="" />
   <meta name="description" content="联系我们" />
-  <script type="text/javascript" src="http://img6.dfco.cn/yuanxiangsannong/mobile/js/pagemode.js"></script>
-  <link rel="stylesheet" href="http://img6.dfco.cn/yuanxiangsannong/mobile/style/css/index.css" />
+    <script type="text/javascript" src="http://img6.dfco.cn/yuanxiangsannong/mobile/js/pagemode.js"></script>
+  <link rel="stylesheet" href="http://img6.dfco.cn/yuanxiangsannong/style/css/index.css" />
+<!--引用百度地图API-->
+<style type="text/css">
+    html,body{margin:0;padding:0;}
+    .iw_poi_title {color:#CC5522;font-size:14px;font-weight:bold;overflow:hidden;padding-right:13px;white-space:nowrap}
+    .iw_poi_content {font:12px arial,sans-serif;overflow:visible;padding-top:4px;white-space:-moz-pre-wrap;word-wrap:break-word}
+</style>
+<script type="text/javascript" src="http://api.map.baidu.com/api?key=&v=1.1&services=true"></script>
 </head>
 
 <body>
-  <header>
-  <nav class="header">
-    <div class="logo">
-      <div><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/logo.png"/></div>
-      <div><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/dhshx.png"/></div>
-      <p>做中国最专业的村镇发展服务商</p>
-    </div>
-    <div class="dhcd">
-      <img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/dh.png" alt="" onclick="Open()">
-    </div>
-  </nav>
-  <div class="cdl">
-    <div class="close"><a onclick="Close()"><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/del.png" alt=""></a></div>
-    <div class="dhlnr">
+  <nav>
+  <div id="colorNav">
       <ul>
-        <li><a href="/mobile/">网站首页</a></li>
-        <li><a href="/mobile/gyyx/">关于愿乡</a></li>
-        <li><a href="/mobile/yxcp/">愿乡产品</a></li>
-        <li><a href="/mobile/yxhhr/">愿乡合伙人</a></li>
-        <li><a href="/mobile/yxct/">愿乡词条</a></li>
-        <li><a href="/mobile/jdal/">经典案例</a></li>
-        <li><a href="/mobile/xwzx/">新闻中心</a></li>
-        <li><a href="/mobile/lxwm/">联系我们</a></li>
+          <li class="logo">
+              <div><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/logo.png" alt="" /></div>
+          </li>
+          <li class="dht"><a href="/">网站首页</a></li>
+          <li class="dht"><a href="/gyyx/">关于愿乡</a>
+              <ul>
+                                                <li><a href="/gyyx/gsjj/">公司简介</a></li>
+                                                <li><a href="/gyyx/qywh/">企业文化</a></li>
+                                                <li><a href="/gyyx/ywfw/">业务范围</a></li>
+                                                <li><a href="/gyyx/rczp/">人才招聘</a></li>
+                              </ul>
+          </li>
+          <li class="dht"><a href="/yxcp/">愿乡产品</a>
+              <ul>
+                                                <li><a href="/yxcp/zcyy/">整村运营</a></li>
+                                                <li><a href="/yxcp/yxch/">愿乡策划  </a></li>
+                                                <li><a href="/yxcp/jtjs/">集体建设用地盘活</a></li>
+                                                <li><a href="/yxcp/yxzc/">愿乡助村 </a></li>
+                                                <li><a href="/yxcp/szxc/">数字乡村</a></li>
+                              </ul>
+          </li>
+          <li class="dht"><a href="/yxhhr/">愿乡合伙人</a></li>
+          <li class="dht"><a href="/yxct/">愿乡词条</a>
+              <ul>
+                                                <li><a href="/yxct/yxzcyy/">愿乡整村运营</a></li>
+                                                <li><a href="/yxct/yxcyfw/">愿乡产业服务</a></li>
+                                                <li><a href="/yxct/cxr/">愿乡融城乡</a></li>
+                                                <li><a href="/yxct/yyxt/">愿乡运营协同</a></li>
+                                                <li><a href="/yxct/xtzl/">愿乡协同治理</a></li>
+                                                <li><a href="/yxct/zlxt/">乡村治理协同</a></li>
+                                                <li><a href="/yxct/xtyy/">乡村协同运营</a></li>
+                                                <li><a href="/yxct/yxzx/">愿乡咨询</a></li>
+                                                <li><a href="/yxct/zhxc/">愿乡智慧乡村</a></li>
+                              </ul>
+          </li>
+          <li class="dht"><a href="/jdal/">经典案例</a></li>
+          <li class="dht"><a href="/xwzx/">新闻中心</a>
+              <ul>
+                                                <li><a href="/xwzx/yxxw/">愿乡新闻</a></li>
+                                                <li><a href="/xwzx/hydt/">行业动态</a></li>
+                                                <li><a href="/xwzx/hybk/">行业百科</a></li>
+                              </ul>
+          </li>
+          <li class="dht"><a href="/lxwm/">联系我们</a></li>
+          <li class="rxdh">
+              <div class="rxdh-s">
+                  <img src="http://img6.dfco.cn/yuanxiangsannong/style/images/dh.png" alt="" />全国服务热线
+              </div>
+              <div class="rxdh-x">028-87808890</div>
+          </li>
       </ul>
-    </div>
   </div>
-  <script>
-    // 导航栏
-    function Close(){
-      $(".cdl").hide();
-    }
-    function Open(){
-      $(".cdl").show();
-    }
-  </script>
-</header>
+</nav>
+<meta name="baidu-site-verification" content="code-KR3mfzaJp5" />
 
   <section class="banner">
     <div class="slider-wrapny  J_sliderWrap">
       <div class="slider">
         <ul class="slider-list">
           <li class="item cur">
-            <a href="" class="item-lk"><img class="item-img" src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/lxbanner.png" alt="" /></a>
+            <a href="" class="item-lk"><img class="item-img" src="http://img6.dfco.cn/yuanxiangsannong/style/images/lxbanner.png" alt="" /></a>
           </li>
         </ul>
       </div>
-      <!-- <div class="bannertitle">
+      <div class="bannertitle">
         <div class="bannertop">联系我们</div>
-        <div class="bannerdown"><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/nryxian.png" alt="">CONTACT<img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/nryxian.png" alt=""></div>
-      </div> -->
+        <div class="bannerdown"><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/nryxian.png" alt="">CONTACT<img src="http://img6.dfco.cn/yuanxiangsannong/style/images/nryxian.png"
+            alt=""></div>
+      </div>
     </div>
   </section>
 
   <section class="navigation">
     <div class="bar">
-      <img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/dhlxt.png" alt="">
+      <img src="http://img6.dfco.cn/yuanxiangsannong/style/images/dhlxt.png" alt="">
       <span><a href="/">首页</a>&nbsp;>&nbsp;<a href="/lxwm/">联系我们</a></span>
     </div>
   </section>
 
   <section class="lxwm2">
     <div class="lxwm2top">
-      <div class="lxwm2right">
-        <img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/jjtp.png" alt="">
-      </div>
       <div class="lxwm2left">
         <h2>四川愿乡三农科技服务有限公司</h2>
         <span>contact us </span>
         <p>20年来，愿乡与中国乡村共成长。为全国各地的村庄、乡镇、A级景区、特色街区提供了策划、规划、设计、投资、建设、运营等服务，积累了丰富的服务经验。 未来，愿乡与乡村共发展！</p>
         <div class="lxwmjtnr">
-          <p><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/lxdh.png" alt="">电话：028-87808890 </p>
-          <p><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/lxphone.png" alt="">手机：杨女士-18280349423 马先生-18302809651</p>
-          <p><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/lxyx.png" alt="">邮箱：274988854@qq.com</p>
-          <p><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/lxdz.png" alt="">地址：成都市郫都区德源镇（菁蓉镇）红旗大道北段160号一楼3号</p>
+          <p><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/lxdh.png" alt="">电话：028-87808890 </p>
+          <p><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/lxphone.png" alt="">手机：杨女士-18280349423 马先生-18302809651</p>
+          <p><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/lxyx.png" alt="">邮箱：274988854@qq.com</p>
+          <p><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/lxdz.png" alt="">地址：成都市郫都区德源镇（菁蓉镇）红旗大道北段160号一楼3号</p>
         </div>
+      </div>
+      <div class="lxwm2right">
+        <img src="http://img6.dfco.cn/yuanxiangsannong/style/images/jjtp.png" alt="">
       </div>
     </div>
   </section>
 
   <section class="lxwm3">
-    <div class="lxwm3dt">
-      <img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/dtdt.png" alt="">
-    </div>
+    <div class="lxwm3dt" id="dituContent"></div>
   </section>
 
   <section class="lxwm4">
@@ -104,36 +131,97 @@
         <p>Online Message </p>
       </div>
       <div class="lxwm4down">
+        <textarea name="text" id="text" placeholder="请输入留言内容"></textarea>
         <div class="from">
-          <input type="text" placeholder="请输入姓名:">
-          <input type="text" placeholder="请输入手机号码:">
+          <input type="text" placeholder="请输入姓名">
+          <input type="text" placeholder="请输入手机号码">
+          <input type="text" placeholder="请输入邮箱">
+          <input type="text" placeholder="请输入验证码">
+          <input type="text" placeholder="请输入地址">
+          <input type="text" placeholder="请输入邮编">
         </div>
-        <textarea name="text" id="text" placeholder="备注："></textarea>
-        <button>立即提交</button>
+        <button>提交</button>
       </div>
     </div>
   </section>
 
   <footer class="footer">
-    <div class="foot">
-        <div class="footerwb">
-            <h2>四川愿乡三农科技服务有限公司</h2>
-            <div>咨询电话：028-87808890</div>
-            <div>商务邮箱：274988854@qq.com</div>
-            <div>公司地址：成都市郫都区德源镇（菁蓉镇）红旗大道北段160号一楼3号</div>
-            <div>技术支持：舜王科技</div>
-        </div>
-        <div class="footerewm">
-            <div><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/logow.png" alt=""></div>
-            <div><img src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/images/ewm.png" alt=""></div>
-            <div><p>愿乡研究院公众号</p></div>
-        </div>
-    </div>
-    <div class="wblj"><span>Copyright @ 2021-2025 . All rights reserved. <br/>四川愿乡三农科技服务有限公司 <a href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2021014861号</a></span></div>
+  <div class="foot">
+      <div class="footwbdh">
+          <ul>
+              <li>
+                  <h2>关于愿乡</h2>
+                  <div>
+                      <a href="/gyyx/gsjj/">企业简介</a><br/>
+                      <a href="/gyyx/qywh/">企业文化</a><br/>
+                      <a href="/gyyx/ywfw/">业务范围</a><br/>
+                      <a href="/xwzx/">新闻中心</a>
+                  </div>
+              </li>
+              <li>
+                  <h2>愿乡产品</h2>
+                  <div>
+                      <a href="/yxcp/zcyy/">整村运营</a><br/>
+                      <a href="/yxcp/yxch/">愿乡策划</a><br/>
+                      <a href="/yxcp/jtjs/">集体建设用地盘活</a><br/>
+                      <a href="/yxcp/yxzc/">愿乡助村</a><br/>
+                      <a href="/yxcp/szxc/">数字乡村</a>
+                  </div>
+              </li>
+              <li>
+                  <h2>愿乡合伙人</h2>
+                  <div>
+                      <a href="/yxhhr/">基本介绍</a><br/>
+                      <a href="/yxhhr/">合作对象</a><br/>
+                      <a href="/yxhhr/">县域乡村发展...</a>
+                  </div>
+              </li>
+              <li>
+                  <h2>愿乡词条</h2>
+                  <div>
+                      <a href="/yxct/yxzcyy/">愿乡整村运营</a><br/>
+                      <a href="/yxct/yxcyfw/">愿乡产业服务</a><br/>
+                      <a href="/yxct/cxr/">愿乡融城乡</a><br/>
+                      <a href="/yxct/yyxt/">愿乡运营协同</a><br/>
+                      <a href="/yxct/">更多...</a>
+                  </div>
+              </li>
+              <li>
+                  <h2>经典案例</h2>
+                  <div>
+                      <a href="/jdal/">战旗村</a><br/>
+                      <a href="/jdal/">三道堰古镇</a><br/>
+                      <a href="/jdal/">青杠树村</a>
+                  </div>
+              </li>
+              <li>
+                  <h2>联系我们</h2>
+                  <div>
+                      <a href="/lxwm/">联系方式</a><br/>
+                      <a href="/lxwm/">在线留言</a><br/>
+                      <a href="/lxwm/">地图导肮</a>
+                  </div>
+              </li>
+              <li>
+                  <div><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/logow.png" alt=""></div>
+                  <div>
+                      <img src="http://img6.dfco.cn/yuanxiangsannong/style/images/ewm.png" alt="">
+                      <p>愿乡研究院公众号</p>
+                  </div>
+              </li>
+          </ul>
+      </div>
+      <div class="footerwb">
+          <div><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/tel.png" alt="">服务热线：028-87808890</div>
+          <div><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/yx.png" alt="">邮箱：274988854@qq.com</div>
+          <div><img src="http://img6.dfco.cn/yuanxiangsannong/style/images/dz.png" alt="">地址：成都市郫都区德源镇（菁蓉镇）红旗大道北段160号一楼3号</div>
+      </div>
+  </div>
+  <div class="wblj"><span>Copyright @ 2021-2025 . All rights reserved. 四川愿乡三农科技服务有限公司 <a href="https://beian.miit.gov.cn/#/Integrated/index">蜀ICP备2021014861号</a> 技术支持：<a href="https://www.shunking.cn/">舜王科技</a></span></div>
 </footer>
 
   <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
-  <script src="http://img6.dfco.cn/yuanxiangsannong/mobile/style/js/mySlider.js"></script>
+  <script src="http://img6.dfco.cn/yuanxiangsannong/style/js/mySlider.js"></script>
   <script>
     new Slider({
       oSliderWrap: $('.J_sliderWrap'),
@@ -144,6 +232,104 @@
       btnGroupRight: $('.btn-right')
     }).init();
   </script>
+<script type="text/javascript">
+    //创建和初始化地图函数：
+    function initMap(){
+        createMap();//创建地图
+        setMapEvent();//设置地图事件
+        addMapControl();//向地图添加控件
+        addMarker();//向地图中添加marker
+    }
+    
+    //创建地图函数：
+    function createMap(){
+        var map = new BMap.Map("dituContent");//在百度地图容器中创建一个地图
+        var point = new BMap.Point(103.868405,30.786584);//定义一个中心点坐标
+        map.centerAndZoom(point,18);//设定地图的中心点和坐标并将地图显示在地图容器中
+        window.map = map;//将map变量存储在全局
+    }
+    
+    //地图事件设置函数：
+    function setMapEvent(){
+        map.enableDragging();//启用地图拖拽事件，默认启用(可不写)
+        map.enableScrollWheelZoom();//启用地图滚轮放大缩小
+        map.enableDoubleClickZoom();//启用鼠标双击放大，默认启用(可不写)
+        map.enableKeyboard();//启用键盘上下左右键移动地图
+    }
+    
+    //地图控件添加函数：
+    function addMapControl(){
+        //向地图中添加缩放控件
+	var ctrl_nav = new BMap.NavigationControl({anchor:BMAP_ANCHOR_TOP_LEFT,type:BMAP_NAVIGATION_CONTROL_LARGE});
+	map.addControl(ctrl_nav);
+        //向地图中添加缩略图控件
+	var ctrl_ove = new BMap.OverviewMapControl({anchor:BMAP_ANCHOR_BOTTOM_RIGHT,isOpen:1});
+	map.addControl(ctrl_ove);
+        //向地图中添加比例尺控件
+	var ctrl_sca = new BMap.ScaleControl({anchor:BMAP_ANCHOR_BOTTOM_LEFT});
+	map.addControl(ctrl_sca);
+    }
+    
+    //标注点数组
+    var markerArr = [{title:"四川愿乡三农科技服务有限公司",content:"成都市郫都区德源镇（菁蓉镇）红旗大道北段160号一楼3号",point:"103.868113|30.786304",isOpen:1,icon:{w:23,h:25,l:46,t:21,x:9,lb:12}}
+		 ];
+    //创建marker
+    function addMarker(){
+        for(var i=0;i<markerArr.length;i++){
+            var json = markerArr[i];
+            var p0 = json.point.split("|")[0];
+            var p1 = json.point.split("|")[1];
+            var point = new BMap.Point(p0,p1);
+			var iconImg = createIcon(json.icon);
+            var marker = new BMap.Marker(point,{icon:iconImg});
+			var iw = createInfoWindow(i);
+			var label = new BMap.Label(json.title,{"offset":new BMap.Size(json.icon.lb-json.icon.x+10,-20)});
+			marker.setLabel(label);
+            map.addOverlay(marker);
+            label.setStyle({
+                        borderColor:"#808080",
+                        color:"#333",
+                        cursor:"pointer"
+            });
+			
+			(function(){
+				var index = i;
+				var _iw = createInfoWindow(i);
+				var _marker = marker;
+				_marker.addEventListener("click",function(){
+				    this.openInfoWindow(_iw);
+			    });
+			    _iw.addEventListener("open",function(){
+				    _marker.getLabel().hide();
+			    })
+			    _iw.addEventListener("close",function(){
+				    _marker.getLabel().show();
+			    })
+				label.addEventListener("click",function(){
+				    _marker.openInfoWindow(_iw);
+			    })
+				if(!!json.isOpen){
+					label.hide();
+					_marker.openInfoWindow(_iw);
+				}
+			})()
+        }
+    }
+    //创建InfoWindow
+    function createInfoWindow(i){
+        var json = markerArr[i];
+        var iw = new BMap.InfoWindow("<b class='iw_poi_title' title='" + json.title + "'>" + json.title + "</b><div class='iw_poi_content'>"+json.content+"</div>");
+        return iw;
+    }
+    //创建一个Icon
+    function createIcon(json){
+        var icon = new BMap.Icon("http://app.baidu.com/map/images/us_mk_icon.png", new BMap.Size(json.w,json.h),{imageOffset: new BMap.Size(-json.l,-json.t),infoWindowOffset:new BMap.Size(json.lb+5,1),offset:new BMap.Size(json.x,json.h)})
+        return icon;
+    }
+    
+    initMap();//创建和初始化地图
+</script>
+  
 </body>
 
 </html>
